@@ -1,0 +1,67 @@
+site_name: Dokumentasi IndieKator
+site_description: Dokumentasi Fear and Greed Index IHSG IndieKator
+site_url: https://indiekator.github.io/docs/
+repo_url: https://github.com/IndieKator/docs
+repo_name: IndieKator/docs
+
+docs_dir: content
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: id
+  font: false
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  palette:
+    - scheme: linear-light
+      toggle:
+        icon: material/weather-sunny
+        name: Gunakan mode gelap
+    - scheme: linear-dark
+      toggle:
+        icon: material/weather-night
+        name: Gunakan mode terang
+
+extra_css:
+  - stylesheets/linear.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Beranda: index.md
+  - Metodologi:
+      - Formula Fear and Greed Index: methodology/fear-greed-formula.md
+      - Normalisasi dan Google Trends: methodology/normalization.md
+      - Pembobotan Skor: methodology/weighting.md
+  - Panduan:
+      - Menjalankan Backend: guides/setup.md
+      - Alur Data dan Ingest: guides/data-pipeline.md
+      - Menggunakan API FGI: guides/usage.md
+  - Arsitektur:
+      - Gambaran Sistem: architecture/overview.md
+      - Aliran Data: architecture/data-flow.md

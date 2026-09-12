@@ -5,29 +5,23 @@ dihitung, diambil, disimpan, dan digunakan oleh aplikasi.
 
 ## Metodologi
 
-- [Formula Fear and Greed Index](methodology/fear-greed-formula.md)
-- [Normalisasi dan Google Trends](methodology/normalization.md)
-- [Pembobotan skor](methodology/weighting.md)
+- [Formula Fear and Greed Index](content/methodology/fear-greed-formula.md)
+- [Normalisasi dan Google Trends](content/methodology/normalization.md)
+- [Pembobotan skor](content/methodology/weighting.md)
 
 ## Panduan
 
-- [Menjalankan backend](guides/setup.md)
-- [Alur data dan ingest](guides/data-pipeline.md)
-- [Menggunakan API FGI](guides/usage.md)
+- [Menjalankan backend](content/guides/setup.md)
+- [Alur data dan ingest](content/guides/data-pipeline.md)
+- [Menggunakan API FGI](content/guides/usage.md)
 
 ## Arsitektur
 
-- [Gambaran sistem](architecture/overview.md)
-- [Aliran data](architecture/data-flow.md)
+- [Gambaran sistem](content/architecture/overview.md)
+- [Aliran data](content/architecture/data-flow.md)
 
-## Handbook PDF
+## Situs dokumentasi
 
-PDF gabungan dibangun otomatis oleh GitHub Actions ketika dokumentasi berubah.
-Untuk membuatnya secara lokal, jalankan:
-
-```powershell
-uv run --with-requirements build-pipeline/requirements.txt python build-pipeline/generate_pdf.py
-```
-
-Hasil lokal berada di `output/pdf/indiekator-docs.pdf` dan tidak disimpan di
-Git. Unduh artefak `indiekator-docs-pdf` dari workflow untuk hasil CI.
+Baca dokumentasi dalam format web di
+[indiekator.github.io/docs](https://indiekator.github.io/docs/). Situs
+diperbarui otomatis dari branch `main` melalui GitHub Pages.

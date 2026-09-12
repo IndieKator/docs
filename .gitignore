@@ -1,4 +1,1 @@
-output/
-tmp/
-__pycache__/
-*.py[cod]
+site/
